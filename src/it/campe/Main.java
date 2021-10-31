@@ -1,14 +1,22 @@
 package it.campe;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int age = scanner.nextInt();
-        if (age < 18)
-            if (age >= 6)
+        if (age < 18 && age > 5) {
+            if (age >= 6) {
                 System.out.println("нужно ходить в школу");
-            else
+            } else {
                 System.out.println("пора в институт");
+            }
+        }
     }
 }
+/*Есть программа, которая принимает на вход возраст и определяет, нужно в школу или уже пора в институт.
+Но она работает неправильно. Например,
+ пятилетнего ребенка отправляют в институт! Исправить программу несложно: достаточно
+ в нужном месте поставить фигурные скобк*/
